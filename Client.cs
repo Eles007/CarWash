@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CarWash
 {
-    class Client
+    class Client: IComparable
     {
         public DateTime TimeVisit;
         public string Sex;
@@ -16,18 +16,17 @@ namespace CarWash
         {
             get
             {
-                if (Sex == "male" || Sex == "Male")
+                if (Sex == "male")
                 {
-                    return "Уважаемый " + fio;
+                    return "Уважаемый клиент, " + fio;
                 }
-                return "Уважаемая " + fio;
+                return "Уважаемая клиентка, " + fio;
             }
             set
             {
                 fio = value;
             }
         }
-
         public Client(string fullname, string sex, int age, DateTime timeVisit)
         {
             TimeVisit = timeVisit;
@@ -35,12 +34,7 @@ namespace CarWash
             FIO = fullname;
             Age = age;
         }
-
-        public void printSpendMoney()
-        {
-            Console.WriteLine(fio + " потратил " + SpentMoney);
-        }
-
+        //сортируем клиентов по принципу, кто больше купил - выше, кому больше лет - выше
         public int CompareTo(object client2)
         {
             Client client3 = (Client)client2;

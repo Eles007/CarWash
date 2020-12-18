@@ -2,3 +2,15 @@ C:\work\VM21\CarWash\obj\Debug\netcoreapp2.1\CarWash.csprojAssemblyReference.cac
 C:\work\VM21\CarWash\obj\Debug\netcoreapp2.1\CarWash.csproj.CoreCompileInputs.cache
 C:\work\VM21\CarWash\obj\Debug\netcoreapp2.1\CarWash.AssemblyInfoInputs.cache
 C:\work\VM21\CarWash\obj\Debug\netcoreapp2.1\CarWash.AssemblyInfo.cs
+C:\Users\User\Desktop\CarWash\obj\Debug\netcoreapp2.1\CarWash.csprojAssemblyReference.cache
+C:\Users\User\Desktop\CarWash\obj\Debug\netcoreapp2.1\CarWash.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\CarWash\obj\Debug\netcoreapp2.1\CarWash.AssemblyInfo.cs
+C:\Users\User\Desktop\CarWash\obj\Debug\netcoreapp2.1\CarWash.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\CarWash\bin\Debug\netcoreapp2.1\CarWash.deps.json
+C:\Users\User\Desktop\CarWash\bin\Debug\netcoreapp2.1\CarWash.runtimeconfig.json
+C:\Users\User\Desktop\CarWash\bin\Debug\netcoreapp2.1\CarWash.runtimeconfig.dev.json
+C:\Users\User\Desktop\CarWash\bin\Debug\netcoreapp2.1\CarWash.dll
+C:\Users\User\Desktop\CarWash\bin\Debug\netcoreapp2.1\CarWash.pdb
+C:\Users\User\Desktop\CarWash\obj\Debug\netcoreapp2.1\CarWash.dll
+C:\Users\User\Desktop\CarWash\obj\Debug\netcoreapp2.1\CarWash.pdb
+C:\Users\User\Desktop\CarWash\obj\Debug\netcoreapp2.1\CarWash.genruntimeconfig.cache

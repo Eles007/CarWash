@@ -4,21 +4,38 @@ using System.Text;
 
 namespace CarWash
 {
-    class Services:Service
+    class Services
     {
-        public ComplexWashing (Employee employee, Client client, DateTime time) : base(employee, client, time)
+        public int Price;
+        public DateTime Time;
+        public Employee Employee;
+        public Client Client;
+        public Services(Employee employee, Client client, DateTime time)
+        {
+            Time = time;
+            Employee = employee;
+            Client = client;
+        }
+        public void DoService()
+        {
+            Employee.WorkCount++;
+            Client.SpentMoney += Price;
+            Client.BuyServiceCount++;
+        }
+        public void ComplexWashing()
         {
             Price = 600;
+            
         }
-        public InteriorCleaning(Employee employee, Client client, DateTime time) : base(employee, client, time)
+        public void InteriorCleaning()
         {
             Price = 250;
         }
-        public DryCleaningFull(Employee employee, Client client, DateTime time) : base(employee, client, time)
+        public void DryCleaningFull()
         {
             Price = 4000;
         }
-        public Drying(Employee employee, Client client, DateTime time) : base(employee, client, time)
+        public void Drying()
         {
             Price = 100;
         }

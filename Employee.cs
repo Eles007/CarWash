@@ -12,9 +12,5 @@ namespace CarWash
         {
             FIO = FullName;
         }
-        public void PrintEmployee()
-        {
-            Console.WriteLine(FIO + "выполнил услуг: " + WorkCount);
-        }
     }
 }
