@@ -1,0 +1,4 @@
+C:\work\VM21\CarWash\obj\Debug\netcoreapp2.1\CarWash.csprojAssemblyReference.cache
+C:\work\VM21\CarWash\obj\Debug\netcoreapp2.1\CarWash.csproj.CoreCompileInputs.cache
+C:\work\VM21\CarWash\obj\Debug\netcoreapp2.1\CarWash.AssemblyInfoInputs.cache
+C:\work\VM21\CarWash\obj\Debug\netcoreapp2.1\CarWash.AssemblyInfo.cs
