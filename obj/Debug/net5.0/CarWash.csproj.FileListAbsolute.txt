@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\CarWash\obj\Debug\net5.0\CarWash.csprojAssemblyReference.cache
+C:\Users\User\Desktop\CarWash\obj\Debug\net5.0\CarWash.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\CarWash\obj\Debug\net5.0\CarWash.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\CarWash\obj\Debug\net5.0\CarWash.AssemblyInfo.cs
+C:\Users\User\Desktop\CarWash\obj\Debug\net5.0\CarWash.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\CarWash\bin\Debug\net5.0\CarWash.exe
+C:\Users\User\Desktop\CarWash\bin\Debug\net5.0\CarWash.deps.json
+C:\Users\User\Desktop\CarWash\bin\Debug\net5.0\CarWash.runtimeconfig.json
+C:\Users\User\Desktop\CarWash\bin\Debug\net5.0\CarWash.runtimeconfig.dev.json
+C:\Users\User\Desktop\CarWash\bin\Debug\net5.0\CarWash.dll
+C:\Users\User\Desktop\CarWash\bin\Debug\net5.0\ref\CarWash.dll
+C:\Users\User\Desktop\CarWash\obj\Debug\net5.0\CarWash.dll
+C:\Users\User\Desktop\CarWash\obj\Debug\net5.0\ref\CarWash.dll
+C:\Users\User\Desktop\CarWash\obj\Debug\net5.0\CarWash.genruntimeconfig.cache
