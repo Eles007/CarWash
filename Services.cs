@@ -6,38 +6,18 @@ namespace CarWash
 {
     class Services
     {
-        public int Price;
-        public DateTime Time;
         public Employee Employee;
         public Client Client;
-        public Services(Employee employee, Client client, DateTime time)
+        public Service Service;
+        public Services(Employee employee, Client client, Service service)
         {
-            Time = time;
             Employee = employee;
             Client = client;
-        }
-        public void DoService()
-        {
+            Service = service;
+
             Employee.WorkCount++;
-            Client.SpentMoney += Price;
+            Client.SpentMoney += Service.Price;
             Client.BuyServiceCount++;
-        }
-        public void ComplexWashing()
-        {
-            Price = 600;
-            
-        }
-        public void InteriorCleaning()
-        {
-            Price = 250;
-        }
-        public void DryCleaningFull()
-        {
-            Price = 4000;
-        }
-        public void Drying()
-        {
-            Price = 100;
         }
     }
 }

@@ -4,63 +4,52 @@ using System.Text;
 
 namespace CarWash
 {
-    class Client: IComparable
+    class Client: Person,IComparable<Client> // интерфейс имеет обобщенную версию, поэтому передаем тип Client
     {
+        private Sex sex;
         public DateTime TimeVisit;
-        public string Sex;
         private string fio;
-        public int Age;
         public int SpentMoney = 0;
         public int BuyServiceCount = 0;
-        public string FIO
+
+
+        //свойство класса Client - нужен для проверки
+        public new string FIO
         {
+            //читает
             get
             {
-                if (Sex == "male")
+                try
                 {
-                    return "Уважаемый клиент, " + fio;
+                    if (Sex.Male == this.sex) return "Уважаемый клиент, " + fio + " потратил сумму: ";
+                    else if (Sex.Female == this.sex) return "Уважаемая клиентка, " + fio + " потратила сумму: ";
+                    else throw new Exception("В Person->Sex есть лишний пол!");
                 }
-                return "Уважаемая клиентка, " + fio;
+                catch
+                {
+                    return "Ошибка:Такого пола нет!";
+                }
             }
+            //записывает
             set
             {
                 fio = value;
             }
         }
-        public Client(string fullname, string sex, int age, DateTime timeVisit)
+        public Client(string fullname, Sex sex, int age, DateTime timeVisit)
         {
             TimeVisit = timeVisit;
-            Sex = sex;
+            this.sex = sex;
             FIO = fullname;
             Age = age;
         }
+
+
         //сортируем клиентов по принципу, кто больше купил - выше, кому больше лет - выше
-        public int CompareTo(object client2)
+        public int CompareTo(Client clients)
         {
-            Client client3 = (Client)client2;
-            if (this.BuyServiceCount > client3.BuyServiceCount)
-            {
-                return -1;
-            }
-            else if (this.BuyServiceCount == client3.BuyServiceCount)
-            {
-                if (this.Age > client3.Age)
-                {
-                    return -1;
-                }
-                else if (this.Age == client3.Age)
-                {
-                    return 0;
-                }
-                else
-                {
-                    return 1;
-                }
-            }
-            else
-            {
-                return 1;
-            }
+            if (this.BuyServiceCount == clients.BuyServiceCount) return this.Age.CompareTo(clients.Age);
+            else return this.BuyServiceCount.CompareTo(clients.BuyServiceCount);
         }
     }
 }

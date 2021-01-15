@@ -4,10 +4,9 @@ using System.Text;
 
 namespace CarWash
 {
-    class Employee
+    class Employee : Person
     {
         public int WorkCount;
-        public string FIO;
         public Employee(string FullName)
         {
             FIO = FullName;
