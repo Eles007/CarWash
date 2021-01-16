@@ -1,4 +1,5 @@
 ﻿using System;
+using Sex = CarWash.Client.Sex; // использовали псевдоним для удобства
 
 namespace CarWash
 {
@@ -7,12 +8,12 @@ namespace CarWash
         static void Main(string[] args)
         {
             Client[] client = { 
-                new ("Федор 67 лет", Client.Sex.Male, 67, new (2020, 7, 24)),
-                new ("Алексей 54 года", Client.Sex.Male, 54, new (2020, 7, 25)),
-                new ("Анфиса 20 лет", Client.Sex.Female, 20, new(2020, 7, 25)),
-                new ("Денис 20 лет", Client.Sex.Male, 20, new (2020, 7,26)),
-                new ("Елена 34 года", Client.Sex.Female, 34, new (2020, 7, 26)),
-                new ("Мария 46 года", Client.Sex.Female, 46, new (2020, 7, 27)),
+                new ("Федор 67 лет", Sex.Male, 67, new (2020, 7, 24)),
+                new ("Алексей 54 года", Sex.Male, 54, new (2020, 7, 25)),
+                new ("Анфиса 20 лет", Sex.Female, 20, new(2020, 7, 25)),
+                new ("Денис 20 лет", Sex.Male, 20, new (2020, 7,26)),
+                new ("Елена 34 года", Sex.Female, 34, new (2020, 7, 26)),
+                new ("Мария 46 года", Sex.Female, 46, new (2020, 7, 27)),
             };
             Employee[] emp = { 
                 new ("Алексей Варунов Сергеевич"),

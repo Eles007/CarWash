@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CarWash
 {
-    class Client: Person,IComparable<Client> // интерфейс имеет обобщенную версию, поэтому передаем тип Client
+    class Client: Person,IComparable<Client> // интерфейс имеет обобщенную версию, поэтому передаем тип Client для удобства
     {
         private Sex sex;
         public DateTime TimeVisit;
@@ -14,16 +14,16 @@ namespace CarWash
 
 
         //свойство класса Client - нужен для проверки
-        public new string FIO
+        public new string FIO // использовали сокрытие т.к быстрее, и нам не надо менять все свойство
         {
             //читает
             get
             {
-                try
+                try // использовали проверку на исключение
                 {
-                    if (Sex.Male == this.sex) return "Уважаемый клиент, " + fio + " потратил сумму: ";
-                    else if (Sex.Female == this.sex) return "Уважаемая клиентка, " + fio + " потратила сумму: ";
-                    else throw new Exception("В Person->Sex есть лишний пол!");
+                    if (this.sex == Sex.Male) return "Уважаемый клиент, " + fio + " потратил сумму: ";
+                    else if (this.sex == Sex.Female) return "Уважаемая клиентка, " + fio + " потратила сумму: ";
+                    else throw new Exception("В Person->Sex есть лишний пол!"); //использовали исключение, чтобы если что прекратить работу
                 }
                 catch
                 {
@@ -45,7 +45,7 @@ namespace CarWash
         }
 
 
-        //сортируем клиентов по принципу, кто больше купил - выше, кому больше лет - выше
+        //сортируем клиентов по принципу
         public int CompareTo(Client clients)
         {
             if (this.BuyServiceCount == clients.BuyServiceCount) return this.Age.CompareTo(clients.Age);
